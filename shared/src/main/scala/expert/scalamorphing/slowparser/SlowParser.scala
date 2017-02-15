@@ -4,9 +4,6 @@ import fastparse.core.Implicits._
 import fastparse.core._
 import fastparse.parsers.Combinators._
 
-
-import scala.collection.mutable.ArrayBuffer
-
 class SlowParserImpl[+T, Elem, Repr](self: Parser[T, Elem, Repr])
                                    (implicit repr: fastparse.utils.ReprOps[Elem, Repr], delimiters: Parser[Unit, Elem, Repr])
   extends ParserApiImpl[T, Elem, Repr](self) with SlowParserApi[T, Elem, Repr] {

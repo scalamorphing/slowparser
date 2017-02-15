@@ -8,7 +8,7 @@ lazy val slowparser = {
     version := "0.0.1",
     organization := "expert.scalamorphing",
     libraryDependencies += "com.lihaoyi" %%% "fastparse" % "0.4.1",
-    libraryDependencies += "org.scalactic" %%% "scalactic" % "3.0.1",
+    libraryDependencies += "org.scalactic" %%% "scalactic" % "3.0.1" % "test",
     libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
     scapegoatVersion := "1.1.0"
   )
